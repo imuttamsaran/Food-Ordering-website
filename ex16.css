@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: linear-gradient(317deg, rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.116)), url("https://cdn.pixabay.com/photo/2016/02/20/19/23/hamburger-1212625_960_720.jpg");
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+}
+
+nav.navbar {
+  position: fixed;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar a {
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 15px;
+  float: left;
+  margin-right: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar a:hover {
+  color: rgb(60, 255, 0);
+}
+
+.dropbtn {
+  background-color: #4caf4f00;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 4px;
+  margin-right: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.452);
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: rgb(60, 255, 0);
+}
+
+.container a#left {
+  text-decoration: none;
+  color: white;
+  margin-top: 18px;
+  margin-left: 10px;
+  font-size: 30px;
+  position: absolute;
+}
+
+.navbar a.active {
+  background-color: rgba(255, 169, 9, 0.43);
+  height: 35px;
+}
+
+input[type="text"] {
+  text-indent: 10px;
+  width: 20rem;
+  margin-right: 100px;
+  height: 28px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(251, 205, 0, 0.733);
+}
+
+h3, h4 {
+  color: rgb(0, 0, 0);
+}
+
+div.main-head {
+  overflow-y: hidden;
+  width: auto;
+  /* border: 2px solid red; */
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  align-items: center;
+}
+
+div.main-head a {
+  text-decoration: none;
+}
+
+div.main-head p {
+  color: rgb(0, 0, 0);
+  font-size: 11px;
+}
+
+div.burger {
+  padding-left: 50px;
+}
+
+div.burger img {
+  height: 150px;
+  border-radius: 50%;
+}
+
+div.burger img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05) rotate(0.1deg);
+}
+
+div.main-head h3 {
+  padding-left: 50px;
+}
+
+div.manchurian {
+  padding-left: 50px;
+}
+
+div.manchurian img {
+  height: 150px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+div.manchurian img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05) rotate(0.1deg);
+}
+
+div.sandwich {
+  padding-left: 50px;
+}
+
+div.sandwich img {
+  height: 150px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+div.sandwich img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05) rotate(0.1deg);
+}
+
+div.pizza {
+  padding-left: 50px;
+}
+
+div.pizza img {
+  height: 150px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+div.pizza img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05) rotate(0.1deg);
+}
+
+div.french-fries {
+  padding-left: 50px;
+}
+
+div.french-fries img {
+  height: 150px;
+  border-radius: 50%;
+  width: 180px;
+}
+
+div.french-fries img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05) rotate(0.1deg);
+}
+
+div.hot-dog {
+  padding-left: 50px;
+}
+
+div.hot-dog img {
+  height: 150px;
+  border-radius: 50%;
+  width: 200px;
+}
+
+div.hot-dog img:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.05) rotate(0.1deg);
+}
+
+@media (max-width:600px) {
+  .main-head img.food {
+    height: 80px;
+    width: 80px;
+  }
+  .container a#left {
+    font-size: 20px;
+    top: 2.5px;
+    left: 0px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+  input[type="text"] {
+    width: 11rem;
+    margin-right: 15px;
+    height: 25px;
+  }
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar div.dropdown button{
+      display: none;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .navbar.responsive {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.746);
+  }
+  .navbar.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    
+  }
+  .navbar.responsive div.dropdown button{
+      display: block;
+  }
+}
+
+div.reviews{
+
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+div.customer-img img{
+  height: 30px;
+  border-radius: 200%;
+  width: 30px;
+}
+div.customer-img span{
+  font-size: 20px;
+  font-weight: 1000;
+  padding-bottom: 5px;
+  display: block;
+}
+div.review-1, .review-2, .review-3, .review-4{
+  margin:10px 30px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 10px 10px rgb(245, 245, 245) ;
+}
+h2{
+  text-align: center;
+  text-shadow: 2px 2px rgba(255, 0, 0, 0.349);
+}
+.footer{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.social{
+  margin-top: 10px;
+  text-align: center;
+}
